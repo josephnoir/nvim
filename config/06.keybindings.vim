@@ -100,7 +100,11 @@ nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 " rebind CTRL+K for auto-formatting.
 " map <C-K> :pyf clang-format<CR>
-map <leader>f :pyf clang-format<CR>
+if has('python3')
+  map <leader>f :py3f ~/.config/nvim/clang-format.py<CR>
+else
+  map <leader>f :py ~/.config/nvim/clang-format.py<CR>
+endif
 
 " Begin: Dominik
 " Rebind CTRL+B to build current project.
