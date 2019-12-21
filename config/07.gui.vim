@@ -14,20 +14,16 @@ if has("gui_running")
   "let g:lightline = { 'colorscheme': 'solarized' }
   " COLORS: Stellarized
   colorscheme stellarized
-  set background=dark
-  let g:lightline = { 'colorscheme': 'stellarized_dark' }
+  if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
+    let g:lightline = { 'colorscheme': 'stellarized_dark' }
+  else
+    let g:lightline = { 'colorscheme': 'stellarized_light' }
+  endif
   " COLORS: Snow
   "colorscheme snow
   "set background=dark
   "let g:lightline = { 'colorscheme': 'snow_dark' }
   " COLORS: One (https://github.com/rakr/vim-one)
-else
-  " dark mode enabled?
-  if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
-     set background=dark
-  else
-    set background=light
-  endif
 endif
 
 " Hide right scrollbar, toolbar, and nerdtree scrollbar
