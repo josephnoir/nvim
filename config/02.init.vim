@@ -174,7 +174,7 @@ endif
 " ==============================================================================
 
 if has("spell")
-  set spelllang=en_us,de
+  set spelllang=en_us,de_20
   set spellfile=~/.vim/spellfile.add
 endif
 
