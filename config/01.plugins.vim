@@ -24,11 +24,12 @@ Plug 'rust-lang/rust.vim'
 " Plug 'fatih/vim-go'
 Plug 'tpope/vim-dispatch'
 " nightsense/night-and-day " Did not have time for config
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'autozimu/LanguageClient-neovim', {
+"    \ 'branch': 'next',
+"    \ 'do': 'bash install.sh',
+"    \ }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " --- Colorschemes ---
 Plug 'altercation/vim-colors-solarized'
