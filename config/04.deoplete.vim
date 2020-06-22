@@ -3,8 +3,10 @@
 " ------------------------------------------------------------------------------
 
 " deoplete options
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#enable_smart_case = 1
+call deoplete#custom#option({
+      \ 'enable_at_startup': 1,
+      \ 'enable_smart_case': v:true,
+      \})
 
 " disable autocomplete by default
 "let b:deoplete_disable_auto_complete=1
