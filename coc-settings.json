@@ -1,4 +1,5 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["python"],
-  "python.venvFolders": ["envs",".pyenv",".direnv", "vspokienv"]
+  "python.venvFolders": ["envs",".pyenv",".direnv", "vspokienv"],
+  "diagnostic.checkCurrentLine": true
 }
