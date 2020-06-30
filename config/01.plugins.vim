@@ -20,7 +20,7 @@ Plug 'junegunn/limelight.vim'
 Plug 'scrooloose/nerdcommenter'
 " Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'sheerun/vim-polyglot'
-Plug 'rust-lang/rust.vim'
+" Plug 'rust-lang/rust.vim'
 " Plug 'fatih/vim-go'
 Plug 'tpope/vim-dispatch'
 " nightsense/night-and-day " Did not have time for config

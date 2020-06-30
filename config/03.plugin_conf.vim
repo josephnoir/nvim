@@ -70,6 +70,12 @@ map <leader>nf :NERDTreeFind<cr>
 
 " --- Lightline ---
 " https://github.com/itchyny/lightline.vim
+
+" https://github.com/neoclide/coc.nvim/wiki/Statusline-integration#integration-with-lightlinevim
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+
 if has("gui_running")
   let g:lightline = {
   \   'colorscheme': 'solarized',
@@ -77,6 +83,14 @@ if has("gui_running")
 else
   let g:lightline = {
   \   'colorscheme': 'seoul256',
+  \   'active': {
+  \     'left': [ [ 'mode', 'paste' ],
+  \               [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
+  \   },
+  \   'component_function': {
+  \     'cocstatus': 'coc#status',
+  \     'currentfunction': 'CocCurrentFunction'
+  \   },
   \ }
 endif
 " Hide vims -- INSERT -- in the bottom line
