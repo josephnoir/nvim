@@ -1,5 +1,6 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["python"],
   "python.venvFolders": ["envs",".pyenv",".direnv", "vspokienv"],
-  "diagnostic.checkCurrentLine": true
+  "diagnostic.checkCurrentLine": true,
+  "python.formatting.autopep8Args": [ "--ignore=E402" ] 
 }
