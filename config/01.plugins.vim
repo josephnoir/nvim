@@ -34,6 +34,7 @@ Plug 'lifepillar/vim-solarized8'
 Plug 'nightsense/snow'
 Plug 'nightsense/stellarized'
 Plug 'romainl/flattened'
+Plug 'https://github.com/sonph/onehalf', { 'rtp': 'vim' }
 
 call plug#end()
 

@@ -20,6 +20,7 @@ if has("gui_running")
   if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
     set background=dark
   else
+    "set background=dark
     set background=light
   endif
   "let g:solarized_termtrans=1  " 0, 1
@@ -30,8 +31,8 @@ if has("gui_running")
   "let g:solarized_old_cursor_style=0 "0, 1
   "let g:solarized_use16=0 "0, 1
   "let g:solarized_extra_hi_groups=0 "0, 1
-  colorscheme solarized8
-  let g:lightline = { 'colorscheme': 'solarized' }
+  "colorscheme solarized8
+  "let g:lightline = { 'colorscheme': 'solarized' }
   " COLORS: Stellarized
   "colorscheme stellarized
   "if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
@@ -44,6 +45,19 @@ if has("gui_running")
   "set background=dark
   "let g:lightline = { 'colorscheme': 'snow_dark' }
   " COLORS: One (https://github.com/rakr/vim-one)
+  " COLORS: OneHalf
+  if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+  endif
+  if system("defaults read -g AppleInterfaceStyle") =~ '^Dark'
+    colorscheme onehalfdark
+    let g:lightline.colorscheme='onehalfdark'
+  else
+    colorscheme onehalflight
+    let g:lightline = { 'colorscheme': 'onehalflight' }
+  endif
 endif
 
 
