@@ -194,9 +194,9 @@ map <leader>ss :setlocal spell!<cr>
 " Start extended stuff
 " ------------------------------------------------------------------------------
 
-if exists('$TMUX') 
-    set term=screen-256color 
-endif
+"if exists('$TMUX') 
+    "set term=screen-256color 
+"endif
 
 " Highlight characters in line 81.
 augroup collumnLimit

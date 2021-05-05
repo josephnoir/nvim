@@ -7,8 +7,8 @@ nnoremap <esc> :noh<return><esc>
 nnoremap <esc>^[ <esc>^[
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
+"map <space> /
+"map <c-space> ?
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
@@ -88,15 +88,6 @@ map <leader>bm :copen<CR><C-W><S-J>
 map <leader>bn :cnext<cr>
 map <leader>bp :cprevious<cr>
 map <leader>bc :cclose<cr>
-
-" Rebind CTRL+L for applying Clang-suggested fixes.
-"map <C-L> :YcmCompleter FixIt<CR>
-"inoremap <C-L> :YcmCompleter FixIt<CR>
-map <leader>l :YcmCompleter FixIt<CR>
-inoremap <leader>l :YcmCompleter FixIt<CR>
-
-" bind leader jd to jump to definition
-nnoremap <leader>jd :YcmCompleter GoTo<CR>
 
 " rebind CTRL+K for auto-formatting.
 " map <C-K> :pyf clang-format<CR>

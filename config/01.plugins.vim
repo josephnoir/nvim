@@ -6,36 +6,35 @@ call plug#begin('~/.vim/plugged')
 
 " --- General setup ---
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'scrooloose/nerdtree'
 Plug 'itchyny/lightline.vim'
+Plug 'scrooloose/nerdtree'
 
 " --- Writing ---
-Plug 'reedes/vim-pencil'
-Plug 'reedes/vim-litecorrect'
-Plug 'junegunn/goyo.vim'
 Plug 'amix/vim-zenroom2'
+Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'reedes/vim-litecorrect'
+Plug 'reedes/vim-pencil'
 
 " --- Programming ---
-Plug 'scrooloose/nerdcommenter'
-" Plug 'octol/vim-cpp-enhanced-highlight'
-Plug 'sheerun/vim-polyglot'
-Plug 'rust-lang/rust.vim'
 " Plug 'fatih/vim-go'
-Plug 'tpope/vim-dispatch'
+" Plug 'octol/vim-cpp-enhanced-highlight'
+" Plug 'rust-lang/rust.vim'
 " nightsense/night-and-day " Did not have time for config
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'scrooloose/nerdcommenter'
+Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-surround'
 
 " --- Colorschemes ---
 Plug 'altercation/vim-colors-solarized'
-Plug 'nightsense/stellarized'
-Plug 'nightsense/snow'
-Plug 'icymind/NeoSolarized'
 Plug 'andreypopp/vim-colors-plain'
+Plug 'lifepillar/vim-solarized8'
+Plug 'nightsense/snow'
+Plug 'nightsense/stellarized'
+Plug 'romainl/flattened'
+Plug 'https://github.com/sonph/onehalf', { 'rtp': 'vim' }
 
 call plug#end()
 
